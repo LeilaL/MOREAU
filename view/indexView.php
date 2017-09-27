@@ -2,6 +2,9 @@
 include("template/header.php");
  ?>
 
+<main>
+
+</main>
 
 
  <?php
