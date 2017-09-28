@@ -3,6 +3,7 @@ include('template/header.php');
 ?>
 
 <div id="form" class="container">
+  <h5 class="header center-align">Formulaire Création Projet</h5>
   <a href="indexView.php"><strong>Retour</strong></a>
 <div class="row">
 
@@ -18,10 +19,14 @@ include('template/header.php');
            <input class="waves-effect btn light-blue darken-1" value="Envoyer" type="submit" name="action">
          </div>
 
-        </form>
+       </form>
 
   </div>
 </div>
+
+
+
+
 
 <?php
 include('template/footer.php');
