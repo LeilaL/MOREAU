@@ -1,5 +1,8 @@
 <?php
 include ("template/header.php");
+
+foreach ($show_infos as $key => $resultat) {
+
  ?>
 
 <!-- PROJECT CARD -->
@@ -8,16 +11,18 @@ include ("template/header.php");
         <div class="col s12 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title"></span>
-              <p></p>
+              <span class="card-title"><?php echo $resultat['title']; ?></span>
+              <p><?php echo $resultat['description']; ?></p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
+              <a href="singleView.php?join=<?php echo $resultat['id'];?>">Ajouter une sous étape</a>
             </div>
           </div>
         </div>
       </div>
+
+      <?php
+    } ?>
 
       <!-- SUBSTEPS -->
 <div class="">

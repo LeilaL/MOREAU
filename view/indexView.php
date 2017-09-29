@@ -1,25 +1,34 @@
 <?php
 include("template/header.php");
+?>
+<div class="container-fluid">
+     <div class="row">
+<?php
+foreach ($show_infos as $key => $resultat) {
+
  ?>
 
-<div class="container-fluid">
-
-   <div class="row">
-     <div class="col s12 m6">
-       <div class="card ">
-         <div class="card-image">
-           <img src="">
-           <span class="card-title black-text"></span>
-           <a class="" href=""></a>
+       <div class="col s12 m6 l4">
+         <div class="card blue-grey darken-1">
+           <div class="card-content white-text">
+             <span class="card-title"><?php echo $resultat['title']; ?></span>
+             <p><?php echo $resultat['description']; ?></p>
+             <p><?php echo $resultat['dead_line']; ?></p>
+           </div>
+           <div class="card-action">
+             <a href="singleView.php?join=<?php echo $resultat['id'];?>">Voir le projet détaillé</a>
+           </div>
          </div>
-         <!-- <div class="card-content">
-           <p></p>
-         </div> -->
        </div>
-     </div>
-   </div>
-</div>
+
 
  <?php
+ }
+ ?>
+ </div>
+
+</div>
+<?php
+
  include("template/footer.php");
   ?>
