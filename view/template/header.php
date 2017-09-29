@@ -22,7 +22,7 @@
 
   <nav>
     <div class="nav-wrapper">
-      <a href="indexView.php" class="brand-logo">Logo</a>
+      <a href="../controller/index.php" class="brand-logo">Logo</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>

@@ -3,6 +3,8 @@ include("template/header.php");
 ?>
 <div class="container-fluid">
      <div class="row">
+       <a class="waves-effect btn-large light-blue darken-1" href="../view/formProject_View.php">Créer un projet</a></p>
+
 <?php
 foreach ($show_infos as $key => $resultat) {
 
@@ -16,7 +18,7 @@ foreach ($show_infos as $key => $resultat) {
              <p><?php echo $resultat['dead_line']; ?></p>
            </div>
            <div class="card-action">
-             <a href="singleView.php?join=<?php echo $resultat['id'];?>">Voir le projet détaillé</a>
+             <a href="single.php?join=<?php echo $resultat['id'];?>">Voir le projet détaillé</a>
            </div>
          </div>
        </div>

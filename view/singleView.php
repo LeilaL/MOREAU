@@ -1,31 +1,31 @@
 <?php
 include ("template/header.php");
 
-foreach ($show_infos as $key => $resultat) {
+  foreach ($show_cardProject as $key => $resultat) {
+?>
 
- ?>
 
 <!-- PROJECT CARD -->
-
-      <div class="row">
-        <div class="col s12 m6">
+<div class="row">
+  <div class="col s12 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title"><?php echo $resultat['title']; ?></span>
               <p><?php echo $resultat['description']; ?></p>
+              <p><?php echo $resultat['dead_line']; ?></p>
             </div>
             <div class="card-action">
               <a href="singleView.php?join=<?php echo $resultat['id'];?>">Ajouter une sous étape</a>
             </div>
           </div>
-        </div>
-      </div>
+  </div>
+  </div>
 
-      <?php
-    } ?>
-
+<?php
+}
+ ?>
       <!-- SUBSTEPS -->
-<div class="">
+<!-- <div class="">
 
   <ul class="collapsible popout" data-collapsible="accordion">
     <li>
@@ -44,7 +44,7 @@ foreach ($show_infos as $key => $resultat) {
 
 </div>
 
-      <!-- TASKS -->
+
 
       <div class="">
 
@@ -63,7 +63,7 @@ foreach ($show_infos as $key => $resultat) {
           </li>
         </ul>
 
-      </div>
+      </div> -->
 
 
 <?php

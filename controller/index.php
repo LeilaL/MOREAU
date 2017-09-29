@@ -1,9 +1,9 @@
 <?php
-require_once("../model/formProject_Data.php");
+require_once("../model/indexData.php");
 
 $show_infos = getInfos();
-// print_r($show_infos);
 
+// CHECK INFO OF INPUT
 if(!empty($_POST)) {
 
 // TITLE
@@ -35,6 +35,12 @@ $insertion = insertInBdd($title,$description,$dead_line);
 
 }
 
+// FINISH CHECK + INSERT INPUT INFOS
+
+// header('Location:../view/indexView.php');
+
+
 include("../view/indexView.php");
+// include("../view/singleView.php");
 
  ?>

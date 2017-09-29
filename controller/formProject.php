@@ -19,7 +19,7 @@ require_once("../model/formProject_Data.php");
 //   $description = htmlspecialchars($_POST['desc']);
 // }
 
-insertInBdd($_POST['title'],$_POST['description'],$_POST['dead_line']);
+// insertInBdd($_POST['title'],$_POST['description'],$_POST['dead_line']);
  // }
 
 include("../view/formProject_View.php");
