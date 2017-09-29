@@ -32,15 +32,15 @@ else {
 
 
 $insertion = insertInBdd($title,$description,$dead_line);
+header('Location:index.php');
 
 }
 
 // FINISH CHECK + INSERT INPUT INFOS
 
-// header('Location:../view/indexView.php');
-
 
 include("../view/indexView.php");
+
 // include("../view/singleView.php");
 
  ?>

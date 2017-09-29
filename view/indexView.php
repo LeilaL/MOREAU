@@ -1,6 +1,8 @@
 <?php
 include("template/header.php");
 ?>
+<main id="main">
+
 <div class="container-fluid">
      <div class="row">
        <a class="waves-effect btn-large light-blue darken-1" href="../view/formProject_View.php">Créer un projet</a></p>
@@ -30,6 +32,8 @@ foreach ($show_infos as $key => $resultat) {
  </div>
 
 </div>
+</main>
+
 <?php
 
  include("template/footer.php");
