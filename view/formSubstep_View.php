@@ -4,10 +4,10 @@ include('template/header.php');
 
 <div id="form" class="container">
   <h5 class="header center-align">Formulaire Création Sous Etape</h5>
-  <a href="indexView.php"><strong>Retour</strong></a>
+  <a href="../controller/single.php"><strong>Retour</strong></a>
 <div class="row">
 
-    <form class="col s10" action="../controller/substep.php" method="post">
+    <form class="col s10" action="../controller/substep.php?join=<?php echo $_GET['join'];?>" method="post">
 
         <div class="input-field col s7">
           <input id="first_name" name="title" type="text" class="validate">

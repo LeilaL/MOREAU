@@ -3,11 +3,11 @@ require_once("dbconnect/db_connection.php");
 
 
 // FUNCTION FOR INSERT IN BDD SUBSTEPS
-function insertInfos_substep($title, $description){
+function insertInfos_substep($id_project, $title, $description){
   $bdd = get_dataBase();
-$req = $bdd->prepare('INSERT INTO substeps SET title= ?, description= ?');
+$req = $bdd->prepare('INSERT INTO substeps SET id_project= ?, title= ?, description= ?');
 $req->execute(array(
-    $title, $description
+    $id_project, $title, $description
   ));
 }
 

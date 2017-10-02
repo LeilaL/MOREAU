@@ -2,30 +2,22 @@
 require_once("../model/substepData.php");
 
 // CHECK INFO OF INPUT
-if(isset($_POST)) {
 
-// TITLE
-if(empty($_POST['title'])) {
-  echo 'vous devez entrer des informations';
-}
-else {
-$title = htmlspecialchars($_POST['title']);
-}
+if(isset($_POST['envoi'])){
 
-
-// DESCRIPTION
-if(empty($_POST['description'])) {
-  echo 'vous devez entrer des informations';
-}
-else {
+if(isset($_POST['title'], $_POST['description'])) {
+  $title = htmlspecialchars($_POST['title']);
   $description = htmlspecialchars($_POST['description']);
+  $id_project = $_GET['join'];
+}
+else {
+  echo 'vous devez entrer des informations';
 }
 
-var_dump($_POST);
-insertInfos_substep($title,$description);
-header('Location:single.php');
-
+insertInfos_substep($id_project,$title,$description);
+header('Location:single.php?join='.$id_project);
 }
+
 
 include("../view/formSubstep_View.php");
  ?>

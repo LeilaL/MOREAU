@@ -4,9 +4,9 @@ require("../model/substepData.php");
 
 
 
-$show_cardProject = getInfos_singlePage($_GET['join']);
+$show_cardProject = getInfos_singlePage();
 
-$show_cardSubstep = getInfos_substep($_GET['join']);
+$show_cardSubstep = getInfos_substep();
 
 
 

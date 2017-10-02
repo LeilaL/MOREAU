@@ -20,7 +20,7 @@
 
     <header>
 
-  <nav>
+  <nav id="header">
     <div class="nav-wrapper">
       <a href="../controller/index.php" class="brand-logo">Logo</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">

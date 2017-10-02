@@ -5,16 +5,17 @@ include("template/header.php");
 
 <div class="container-fluid">
      <div class="row">
-       <a class="waves-effect btn-large light-blue darken-1" href="../view/formProject_View.php">Créer un projet</a></p>
+       <a id="button" class="waves-effect btn-large orange darken-1" href="../view/formProject_View.php">Créer un projet</a></p>
 
 <?php
 foreach ($show_infos as $key => $resultat) {
 
  ?>
 
-       <div class="col s12 m6 l4">
+       <div class="col s12 m4 l4">
          <div class="card blue-grey darken-1">
            <div class="card-content white-text">
+             <span class="card-title"><strong>Projet</strong></span>
              <span class="card-title"><?php echo $resultat['title']; ?></span>
              <p><?php echo $resultat['description']; ?></p>
              <p><?php echo $resultat['dead_line']; ?></p>
