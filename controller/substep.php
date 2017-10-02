@@ -2,7 +2,7 @@
 require_once("../model/substepData.php");
 
 // CHECK INFO OF INPUT
-if(!empty($_POST)) {
+if(isset($_POST)) {
 
 // TITLE
 if(empty($_POST['title'])) {
@@ -12,6 +12,7 @@ else {
 $title = htmlspecialchars($_POST['title']);
 }
 
+
 // DESCRIPTION
 if(empty($_POST['description'])) {
   echo 'vous devez entrer des informations';
@@ -20,8 +21,9 @@ else {
   $description = htmlspecialchars($_POST['description']);
 }
 
- insertInfos_substep($id_project, $title, $description);
-header('Location:single.php?join=' .$_GET['join']);
+var_dump($_POST);
+insertInfos_substep($title,$description);
+header('Location:single.php');
 
 }
 

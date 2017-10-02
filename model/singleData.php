@@ -15,7 +15,7 @@ return $resultat;
 // FUNCTION FOR GET INFO FROM BDD FOR SINGLE PAGE SUBSTEPS
 function getInfos_substep($id_num) {
   $bdd = get_dataBase();
-$donnees = $bdd->prepare('SELECT * FROM projects, substeps WHERE substeps.id_project = projects.id');
+$donnees = $bdd->prepare('SELECT * FROM substeps WHERE id=:id');
 $donnees->execute(array(
   'id'=>$id_num
 ));
