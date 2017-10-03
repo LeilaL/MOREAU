@@ -47,14 +47,16 @@ include ("template/header.php");
                      <a href="../view/formTasks_View.php?join=<?php echo $_GET['join'];?>">Créer une tâche</a>
 
                      <?php
-                         foreach ($show_cardTasks as $key => $resultat) {
+                     $show_cardTasks = getInfos_tasks($resultat['id']);
+                     var_dump($resultat['id']);
+                         foreach ($show_cardTasks as $key => $req) {
                      ?>
 
                      <!-- TASKS -->
                      <div class="card-content white-text">
                        <span class="card-title"><strong>Tâche</strong></span>
-                       <span class="card-title"><?php echo $resultat['title']; ?></span>
-                       <span class="card-title"><?php echo $resultat['description']; ?></span>
+                       <span class="card-title"><?php echo $req['title']; ?></span>
+                       <p><?php echo $req['description']; ?></p>
                       <p></p>
                      </div>
 
