@@ -19,8 +19,8 @@ include('template/header.php');
           <label for="textarea1">Informations Complètes</label>
         </div>
 
-        <div class="input-field col s10">
-           <input class="waves-effect btn light-blue darken-1" value="Envoyer" type="submit" name="send">
+        <div class="input-field col s10 ">
+           <input class="waves-effect btn orange darken-1" value="Envoyer" type="submit" name="send">
          </div>
 
        </form>

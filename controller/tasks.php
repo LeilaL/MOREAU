@@ -14,7 +14,7 @@ else {
   echo 'vous devez entrer des informations';
 }
 
-insertInfos_substep($id_substep, $title, $description)
+insertInfos_tasks($id_substep, $title, $description);
 header('Location:single.php?join='.$id_substep);
 }
 

@@ -44,16 +44,22 @@ include ("template/header.php");
                     <p><?php echo $resultat['description']; ?></p>
                    </div>
                    <div class="card-action">
-                     <a href="#">Créer une tâche</a>
+                     <a href="../view/formTasks_View.php?join=<?php echo $_GET['join'];?>">Créer une tâche</a>
 
+                     <?php
+                         foreach ($show_cardTasks as $key => $resultat) {
+                     ?>
 
                      <!-- TASKS -->
                      <div class="card-content white-text">
                        <span class="card-title"><strong>Tâche</strong></span>
-                       <span class="card-title"></span>
+                       <span class="card-title"><?php echo $resultat['title']; ?></span>
+                       <span class="card-title"><?php echo $resultat['description']; ?></span>
                       <p></p>
                      </div>
 
+<?php }
+ ?>
                    </div>
                  </div>
                </div>
